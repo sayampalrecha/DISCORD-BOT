@@ -1,1 +1,1 @@
-square(5)
+husky
