@@ -1,23 +1,9 @@
-# python program for showcasing a method 
+class Car:
+    def __init__(self,color,price):
+        self.color = color
+        self.price = price
 
-# class Animal is defined 
-class Animal:
-    def __init__(self,age,name,breed):
-        self.age = age
-        self.name = name
-        self.breed = breed
-# method is defined here
-# used to define behaviors
-    def bark(self):
-        return "{} is now barking".format(self.name)
+car = Car('red',45000)
 
-animal = Animal(16,max,'husky')
-print(animal.age)
-# print age of dog
-
-print(animal.breed)
-# breed of dog i.e husky
-
-print(animal.name)
-# print name 
-
+print(car.color)
+print(car.price)
