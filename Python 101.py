@@ -1,15 +1,39 @@
 # OOPS in Python 
 
-# define a class called Car() 
-class Car:
-    def __init__(self,color,price):
-        self.color = color
-        self.price = price
+#  INHERITANCE IN OOP'S USING PYTHON
+#  CREATING A BASE CLASS
 
-# object_name is car 
-car = Car('red',45000)
+class Animal():
+    def __init__(self):
+        print("Animal base class created ")
+     
 
-print(car.color)
-print(car.price)
+    def who_am_i(self):
+        print("I am a Animal ")
+        
+        
+        
+        
+        
+# Created a Derived Class called Dog
 
+class Dog(Animal):
+    
+    def __init__(self):
+        Animal.__init__(self)
+        print("Derived Class Dog Created ")
+        
+    def who_am_i(self):
+        print('I am Dog')
+        
+    def bark(self):
+        print("WOOF!")
+        
+        
+mydog = Dog()
+
+mydog.bark()       
+
+mydog.who_am_i()
+        
 
